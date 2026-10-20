@@ -1,0 +1,30 @@
+{
+  "method": "nearest-neighbor state/action novelty; 8 train, 2 held-out episodes",
+  "threshold": 0.3038877280152871,
+  "training_frames": 2787,
+  "heldout": [
+    {
+      "episode": 8,
+      "frames": 348,
+      "clean_false_positive_frames": 0,
+      "attack_start_frame": 177,
+      "attack_flagged_frames": 5,
+      "attack_frames": 5,
+      "max_attack_score": 4.001720910204982
+    },
+    {
+      "episode": 9,
+      "frames": 347,
+      "clean_false_positive_frames": 0,
+      "attack_start_frame": 176,
+      "attack_flagged_frames": 5,
+      "attack_frames": 5,
+      "max_attack_score": 4.00117025554023
+    }
+  ],
+  "limitations": [
+    "No images or phase labels; this is not D_t = -log p(w_t | phase, success).",
+    "Synthetic command flip has no physical effect in this offline check.",
+    "False-positive rate from two episodes is too small for a paper claim."
+  ]
+}

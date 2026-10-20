@@ -1,0 +1,3 @@
+Source: /home/sidc-lab/lerobot/fanuc_er4ia_sim
+Copied runtime scripts, documentation, assets and textures. No existing runs copied.
+Simulation and policy compatibility remain unvalidated.

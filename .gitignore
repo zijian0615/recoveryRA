@@ -1,0 +1,43 @@
+# Environments and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Downloaded from Hugging Face (see README): dataset and ACT checkpoint
+repos/
+
+# Simulation outputs: keep only what reproduction and the reported numbers need
+runs/*
+!runs/offline_detector.json
+!runs/rl_snapshots/
+runs/rl_snapshots/*/*
+!runs/rl_snapshots/*/report_snapshot.json
+!runs/v05/
+runs/v05/*
+!runs/v05/cal_s100/
+!runs/v05/cal_s101/
+!runs/v05/cal_s102/
+runs/v05/cal_s10*/*
+!runs/v05/cal_s10*/report_trace.json
+!runs/v05/matrix/
+!runs/v05/matrix_pt1/
+runs/v05/matrix*/*
+!runs/v05/matrix*/summary.json
+!runs/v05/matrix_pt1/summary.txt
+!runs/v05/compare.png
+
+# RL replay data, training checkpoints, logs, evaluation episodes
+rl/data/
+rl/data_v1/
+rl/ckpt*/
+rl/logs/
+rl/evals/*
+!rl/evals/actor_040000.pt
+!rl/evals/actor_ft030000.pt
+!rl/evals/*.log
+
+# Inherited from the sim starters
+frames*/
+gripper_shots/
+*.mp4
+*.zip

@@ -1,0 +1,338 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "arms": {
+    "clean": {
+      "n": 10,
+      "excluded": {},
+      "success": 9,
+      "success_rate": 0.9,
+      "success_ci95": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "per_seed": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": false,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true,
+        "9": true
+      },
+      "runs_with_alarm": 1
+    },
+    "stop": {
+      "n": 10,
+      "excluded": {},
+      "success": 0,
+      "success_rate": 0.0,
+      "success_ci95": [
+        0.0,
+        0.2775401687666166
+      ],
+      "per_seed": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false
+      },
+      "detected": 10,
+      "false_alarm_before_attack": 0,
+      "detection_delay_steps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "continue": {
+      "n": 10,
+      "excluded": {},
+      "success": 2,
+      "success_rate": 0.2,
+      "success_ci95": [
+        0.056680947980693314,
+        0.5098431532792765
+      ],
+      "per_seed": {
+        "0": false,
+        "1": false,
+        "2": false,
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": true,
+        "7": false,
+        "8": false,
+        "9": false
+      },
+      "detected": 10,
+      "false_alarm_before_attack": 0,
+      "detection_delay_steps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "inverse_replay": {
+      "n": 10,
+      "excluded": {},
+      "success": 1,
+      "success_rate": 0.1,
+      "success_ci95": [
+        0.01787574951572113,
+        0.4041563854975721
+      ],
+      "per_seed": {
+        "0": false,
+        "1": false,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": false
+      },
+      "detected": 10,
+      "false_alarm_before_attack": 0,
+      "detection_delay_steps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "ours": {
+      "n": 10,
+      "excluded": {},
+      "success": 7,
+      "success_rate": 0.7,
+      "success_ci95": [
+        0.39677321997956516,
+        0.892210712513788
+      ],
+      "per_seed": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": true,
+        "7": false,
+        "8": true,
+        "9": true
+      },
+      "detected": 10,
+      "false_alarm_before_attack": 0,
+      "detection_delay_steps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "restore_outcomes": [
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored"
+      ],
+      "checkpoint_restored": 9,
+      "checkpoint_ci95": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "recovery_latency_steps": [
+        136,
+        136,
+        136,
+        136,
+        136,
+        136,
+        136,
+        136,
+        136
+      ]
+    },
+    "ours_rl_v1": {
+      "n": 10,
+      "excluded": {},
+      "success": 4,
+      "success_rate": 0.4,
+      "success_ci95": [
+        0.16817758120350967,
+        0.6873304525498135
+      ],
+      "per_seed": {
+        "0": true,
+        "1": false,
+        "2": true,
+        "3": false,
+        "4": true,
+        "5": false,
+        "6": false,
+        "7": false,
+        "8": false,
+        "9": true
+      },
+      "detected": 10,
+      "false_alarm_before_attack": 0,
+      "detection_delay_steps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "restore_outcomes": [
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored"
+      ],
+      "checkpoint_restored": 8,
+      "checkpoint_ci95": [
+        0.49015684672072335,
+        0.9433190520193067
+      ],
+      "recovery_latency_steps": [
+        56,
+        59,
+        59,
+        57,
+        56,
+        57,
+        57,
+        57
+      ]
+    },
+    "ours_rl": {
+      "n": 10,
+      "excluded": {},
+      "success": 5,
+      "success_rate": 0.5,
+      "success_ci95": [
+        0.23658959361548731,
+        0.7634104063845126
+      ],
+      "per_seed": {
+        "0": true,
+        "1": false,
+        "2": true,
+        "3": false,
+        "4": false,
+        "5": false,
+        "6": true,
+        "7": true,
+        "8": false,
+        "9": true
+      },
+      "detected": 10,
+      "false_alarm_before_attack": 0,
+      "detection_delay_steps": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "restore_outcomes": [
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored",
+        "restored"
+      ],
+      "checkpoint_restored": 9,
+      "checkpoint_ci95": [
+        0.5958436145024278,
+        0.9821242504842788
+      ],
+      "recovery_latency_steps": [
+        59,
+        59,
+        58,
+        58,
+        58,
+        58,
+        58,
+        58,
+        59
+      ]
+    }
+  }
+}

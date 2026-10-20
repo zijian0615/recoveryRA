@@ -1,0 +1,249 @@
+| arm | n | success | 95% CI |
+| --- | --- | --- | --- |
+| clean | 10 | 9 | 0.60-0.98 |
+| stop | 10 | 0 | 0.00-0.28 |
+| continue | 10 | 2 | 0.06-0.51 |
+| inverse_replay | 10 | 1 | 0.02-0.40 |
+| ours | 10 | 7 | 0.40-0.89 |
+| ours_rl_v1 | 10 | 4 | 0.17-0.69 |
+| ours_rl | 10 | 5 | 0.24-0.76 |
+{
+ "clean": {
+  "n": 10,
+  "excluded": {},
+  "success": 9,
+  "success_rate": 0.9,
+  "success_ci95": [
+   0.5958436145024278,
+   0.9821242504842788
+  ],
+  "runs_with_alarm": 1
+ },
+ "stop": {
+  "n": 10,
+  "excluded": {},
+  "success": 0,
+  "success_rate": 0.0,
+  "success_ci95": [
+   0.0,
+   0.2775401687666166
+  ],
+  "detected": 10,
+  "false_alarm_before_attack": 0,
+  "detection_delay_steps": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "continue": {
+  "n": 10,
+  "excluded": {},
+  "success": 2,
+  "success_rate": 0.2,
+  "success_ci95": [
+   0.056680947980693314,
+   0.5098431532792765
+  ],
+  "detected": 10,
+  "false_alarm_before_attack": 0,
+  "detection_delay_steps": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "inverse_replay": {
+  "n": 10,
+  "excluded": {},
+  "success": 1,
+  "success_rate": 0.1,
+  "success_ci95": [
+   0.01787574951572113,
+   0.4041563854975721
+  ],
+  "detected": 10,
+  "false_alarm_before_attack": 0,
+  "detection_delay_steps": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ]
+ },
+ "ours": {
+  "n": 10,
+  "excluded": {},
+  "success": 7,
+  "success_rate": 0.7,
+  "success_ci95": [
+   0.39677321997956516,
+   0.892210712513788
+  ],
+  "detected": 10,
+  "false_alarm_before_attack": 0,
+  "detection_delay_steps": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "restore_outcomes": [
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored"
+  ],
+  "checkpoint_restored": 9,
+  "checkpoint_ci95": [
+   0.5958436145024278,
+   0.9821242504842788
+  ],
+  "recovery_latency_steps": [
+   136,
+   136,
+   136,
+   136,
+   136,
+   136,
+   136,
+   136,
+   136
+  ]
+ },
+ "ours_rl_v1": {
+  "n": 10,
+  "excluded": {},
+  "success": 4,
+  "success_rate": 0.4,
+  "success_ci95": [
+   0.16817758120350967,
+   0.6873304525498135
+  ],
+  "detected": 10,
+  "false_alarm_before_attack": 0,
+  "detection_delay_steps": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "restore_outcomes": [
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored"
+  ],
+  "checkpoint_restored": 8,
+  "checkpoint_ci95": [
+   0.49015684672072335,
+   0.9433190520193067
+  ],
+  "recovery_latency_steps": [
+   56,
+   59,
+   59,
+   57,
+   56,
+   57,
+   57,
+   57
+  ]
+ },
+ "ours_rl": {
+  "n": 10,
+  "excluded": {},
+  "success": 5,
+  "success_rate": 0.5,
+  "success_ci95": [
+   0.23658959361548731,
+   0.7634104063845126
+  ],
+  "detected": 10,
+  "false_alarm_before_attack": 0,
+  "detection_delay_steps": [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0
+  ],
+  "restore_outcomes": [
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored",
+   "restored"
+  ],
+  "checkpoint_restored": 9,
+  "checkpoint_ci95": [
+   0.5958436145024278,
+   0.9821242504842788
+  ],
+  "recovery_latency_steps": [
+   59,
+   59,
+   58,
+   58,
+   58,
+   58,
+   58,
+   58,
+   59
+  ]
+ }
+}
